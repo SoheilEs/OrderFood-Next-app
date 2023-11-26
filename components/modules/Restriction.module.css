@@ -1,0 +1,15 @@
+.contianer{
+    margin: 100px 0 200px;
+}
+.contianer h3 {
+    font-size: 1.5rem;
+    color: #C70039;
+    margin: 24px 0;
+}
+.contianer p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 30px;
+}
+

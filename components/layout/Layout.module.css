@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+.header {
+    max-width:1200px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    margin:auto;
+    
+   
+}
+.left{
+    color: #C70039;
+    font-family: 'Petit Formal Script', cursive;
+    font-size:1.8rem;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+.right {
+    display:flex;
+    font-size:1.3rem;
+    color: #c70038;
+}
+
+
+.menu1{
+    position:relative;
+    margin-right:10px;
+}
+
+.menu1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #c70038;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+.menu1:hover::after {
+    
+    transform: scaleX(1);
+  }
+
+.container {
+    min-height:1000px;
+    max-width:1200px;
+    margin: auto;
+    padding:20px;
+}
+.footer {
+    background-color:rgb(248, 118, 118);
+    padding:20px;
+    text-align:center;
+}
+.humburger{
+    display:none;
+}
+.humburger span {
+    display:block;
+    background-color:#c70038;
+    padding:1px 15px;
+    margin:3px;
+    border-radius:5px;
+    transition: all 0.3s ease-out;
+    transform-origin:4px;
+}
+.humburger .hm1 {
+    transform:rotate(45deg);
+}
+.humburger .hm2 {
+    transform:translateX(-100%);
+    opacity:0;
+}
+.humburger .hm3 {
+    transform:rotate(-45deg);
+}
+
+
+@media(max-width:600px){
+    .header{
+        top:0;
+        padding:10px;
+        position:fixed;
+        width:100%;
+        background: #fff;
+        z-index:1;
+    }
+    .left {
+        
+        margin: 10px;
+        font-size:1.7rem;
+    }
+    .right{
+        margin:0;
+        flex-direction:column;
+        background-color:#fff;
+        position:fixed;
+        transition:all 0.3s linear;
+        transform: translateX(100%);
+        top:0;
+        right:0;
+        height:100vh;
+        width:200px;
+        padding-top: 5rem;
+    }
+    .right a {
+        margin:20px auto;
+    }
+    .humburger{
+        display:flex;
+        position:fixed;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        border:none;
+        background-color:#ffffff;
+        cursor:pointer;
+        margin-right:10px;
+        right:0;
+        z-index: 1;
+    }
+    .container{
+        margin-top:50px;
+    }
+}

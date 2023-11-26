@@ -1,0 +1,133 @@
+.container {
+    max-width:1200px;
+    margin: 100px auto 0;
+}
+.container h2 {
+    color: #C70039;
+    border-bottom: 5px solid;
+    width: fit-content;
+    margin-bottom: 50px;
+    font-size: 1.9rem;
+}
+.banner {
+    display:flex;
+}
+.banner img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.banner div {
+    margin-left: 30px
+}
+.banner h3 {
+    color: #FF6969;
+    font-size: 1.3rem;
+}
+.banner span {
+    display: flex;
+    align-items: center;
+  }
+
+.location {
+  color: grey;
+  margin: 20px 0 40px;
+}
+.price {
+    margin-bottom:30px;
+}
+.discount {
+    padding:10px 50px;
+    color:#fff;
+    text-align:center;
+    background-color: #FF6969;
+    border-radius:5px;
+}
+.intro{
+    margin: 50px 0 50px;
+}
+.intro p {
+    line-height: 2.5;
+    text-align: justify;
+}
+.detail {
+    margin: 50px 0 50px;
+}
+.detail h3 {
+    color: #900C3F;
+    margin-bottom:20px;
+    font-size: 1.5rem;
+}
+.detail ul {
+    margin: 0 30px;
+}
+.detail ul li {
+    display:flex;
+    margin: 10px 0;
+}
+.detail ul li::before{
+    content:".";
+    color: #B9005B;
+    margin-right: 5px;
+    font-weight:bold;
+}
+.detail ul li p {
+    color: #060047;
+    font-size:1.1rem;
+    font-weight:500;
+}
+.detail ul li span{
+    margin-left: 10px;
+}
+.recipe {
+    margin-bottom:50px;
+}
+.recipe h3 {
+    color: #900C3F;
+    margin-bottom:20px;
+    font-size: 1.5rem;
+}
+.recipe div {
+    color:#fff;
+    display:flex;
+    align-items:center;
+    padding:20px;
+  
+}
+.recipe div span {
+    font-size:1.8rem;
+    margin-right: 10px;
+}
+.recipe div p {
+    font-size : 0.8rem;
+}
+.even {
+    background-color : #FF577F;
+}
+.odd {
+    background-color : #FFC4C4;
+}
+.btn {
+    width:100%;
+    padding:20px;
+    margin: 50px 0;
+    color:#fff;
+    background-color: #B9005B;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+@media(max-width:600px) {
+    .banner {
+        flex-direction:column;
+    }
+    .banner div {
+        margin:30px 0 0;
+    }
+    .banner img {
+        width:100%
+    }
+    .discount{
+        width:fit-content;
+    }
+}
